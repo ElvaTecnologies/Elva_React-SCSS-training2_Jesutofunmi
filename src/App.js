@@ -2,35 +2,35 @@
 function App() {
   return (
      <main className="app">
-     <section className="text">
-     <h1>
-          Learn to code by watching others
-     </h1>
-     <p>
-        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. 
-     </p>
-     </section>
-     <section className="form">
-         <button>
-            <strong>Try it free 7 days tthen</strong>\n $20/mo. thereafter
-         </button>
-         <form>
+        <section className="text">
+        <h1>
+            Learn to code by watching others
+        </h1>
+        <p>
+            See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. 
+        </p>
+        </section>
+        <section className="form">
+            <button>
+                <strong>Try it free 7 days then</strong> $20/mo. thereafter
+            </button>
+            <form>
              <div className="input-group">
-                 <input type="text" name="firstname" id="firstname" value="" placeholder="First Name" />
+                 <input type="text" name="firstname" id="firstname"  placeholder="First Name" required />
              </div>
              <div className="input-group">
-                 <input type="text" name="lastname" value="" placeholder="Last Name" />
+                 <input type="text" name="lastname"  placeholder="Last Name" required/>
              </div>
              <div className="input-group">
-                 <input type="email" name="Email Address"  value="" />
+                 <input type="email" name="email" placeholder="Email Address" required />
              </div>
              <div className="input-group">
-                 <input type="password" name="firstname" value="" placeholder="Password" />
+                 <input type="password" name="password" placeholder="Password" required/>
              </div>
              <button type="submit">
                  claim your free trial
              </button>
-             <small>by clicking the button, you agree to our <a>terms snd services</a></small>
+             <small>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></small>
             </form>
          </section>
      </main>
