@@ -33,6 +33,8 @@ body .app .text p {
 }
 body .app .form button {
   background-color: hsl(248deg, 32%, 49%);
-  width: 100%;
-  padding: 4rem auto;
-}/*# sourceMappingURL=index.css.map */
+  padding: 1rem;
+  color: whitesmoke;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -46,7 +46,30 @@ body{
             button{
                 background-color: $Blue;
                 width: 100%;
-                padding: 4rem auto;
+                padding: 2rem 0;
+                margin-bottom: 2rem;
+                color: whitesmoke;
+            }
+            form{
+                background-color: white;
+                width: 100%;
+                padding: 1rem;
+                
+                .input-group{
+                   width: 100%;
+                   
+                   
+                   .input{
+                       padding: 1rem;
+                       border: 1px solid $GrayishBlue;
+                       width: 100%;
+                       
+                   }
+                   button{
+                       width: 100%;
+                       background-color: $Green;
+                   }
+                }
             }
         }
         

@@ -12,29 +12,25 @@ function App() {
      </section>
      <section className="form">
          <button>
-            Try it free 7 days then $20/mo. thereafter
+            <strong>Try it free 7 days tthen</strong>\n $20/mo. thereafter
          </button>
          <form>
              <div className="input-group">
-                 <label htmlFor="">firstname
-                 </label>
-                 <input type="text" name="firstname" id="firstname" value="" />
+                 <input type="text" name="firstname" id="firstname" value="" placeholder="First Name" />
              </div>
              <div className="input-group">
-                 <label htmlFor="">firstname
-                 </label>
-                 <input type="text" name="firstname" id="firstname" value="" />
+                 <input type="text" name="lastname" value="" placeholder="Last Name" />
              </div>
              <div className="input-group">
-                 <label htmlFor="">firstname
-                 </label>
-                 <input type="text" name="firstname" id="firstname" value="" />
+                 <input type="email" name="Email Address"  value="" />
              </div>
              <div className="input-group">
-                 <label htmlFor="">firstname
-                 </label>
-                 <input type="text" name="firstname" id="firstname" value="" />
+                 <input type="password" name="firstname" value="" placeholder="Password" />
              </div>
+             <button type="submit">
+                 claim your free trial
+             </button>
+             <small>by clicking the button, you agree to our <a>terms snd services</a></small>
             </form>
          </section>
      </main>
