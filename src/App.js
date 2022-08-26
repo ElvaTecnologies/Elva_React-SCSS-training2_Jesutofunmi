@@ -30,7 +30,7 @@ function App() {
              <button type="submit">
                  claim your free trial
              </button>
-             <small>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></small>
+             <small>By clicking the button, you are agreeing to our <a href="/home">Terms and Services</a></small>
             </form>
          </section>
      </main>
