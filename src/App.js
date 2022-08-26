@@ -1,8 +1,8 @@
 
 function App() {
   return (
-     <div className="app">
-     <section>
+     <main className="app">
+     <section className="text">
      <h1>
           Learn to code by watching others
      </h1>
@@ -10,34 +10,34 @@ function App() {
         See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. 
      </p>
      </section>
-     <section>
-         <div>
+     <section className="form">
+         <button>
             Try it free 7 days then $20/mo. thereafter
-         </div>
+         </button>
          <form>
              <div className="input-group">
-                 <label for="firstname">firstname
+                 <label htmlFor="">firstname
                  </label>
                  <input type="text" name="firstname" id="firstname" value="" />
              </div>
              <div className="input-group">
-                 <label for="firstname">firstname
+                 <label htmlFor="">firstname
                  </label>
                  <input type="text" name="firstname" id="firstname" value="" />
              </div>
              <div className="input-group">
-                 <label for="firstname">firstname
+                 <label htmlFor="">firstname
                  </label>
                  <input type="text" name="firstname" id="firstname" value="" />
              </div>
              <div className="input-group">
-                 <label for="firstname">firstname
+                 <label htmlFor="">firstname
                  </label>
                  <input type="text" name="firstname" id="firstname" value="" />
              </div>
-         </form>
-     </section>
-     </>
+            </form>
+         </section>
+     </main>
      );
 };
 
