@@ -1,0 +1,19 @@
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+
+@mixin bordered($color: $Blue, $width: 1px) {
+    -webkit-border: $width solid $color;
+    -moz-border: $width solid $color;
+    border: $width solid $color;
+  }
+
+@mixin box-shadow{
+    box-shadow: 0px 8px 2px 0px rgba(78, 77, 77, 0.3);
+    -webkit-box-shadow: 0px 8px 2px 0px rgba(78, 77, 77, 0.3);
+    -moz-box-shadow: 0px 8px 2px 0px rgba(78, 77, 77, 0.3);
+}
