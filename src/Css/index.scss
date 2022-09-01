@@ -69,6 +69,7 @@ body{
                 .input-group{
                    width: 100%; 
                    margin-bottom: 1rem;
+                   position: relative;
                    
                    input{
                        padding: 1rem;
@@ -76,11 +77,31 @@ body{
                        @include border-radius(5px);
                        width: 100%;
                        
-
-                       ::placeholder{
-                            font-weight: 600;
-                       }
                        
+                   }
+
+                   input.error{
+                        border: 1.5px solid $Red;
+                   }
+
+                   .error::placeholder{
+                        color: transparent;
+                    }
+
+                    .icon{
+                        position: relative;
+                        color: $Red;
+                        font-size: larger;
+                        // top: -2.2rem;
+                        // right: -10.5rem;
+                    }
+
+                   .errorDiv{
+                        float: right;
+                        color: $Red;
+                        font-size: xx-small;
+                        font-style: italic;
+                        font-weight: 300;
                    }
                 }
 

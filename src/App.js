@@ -1,3 +1,4 @@
+import SignUpForm from "./SignUpForm";
 
 function App() {
   return (
@@ -14,24 +15,7 @@ function App() {
             <button>
                 <strong>Try it free 7 days then</strong> $20/mo. thereafter
             </button>
-            <form>
-             <div className="input-group">
-                 <input type="text" name="firstname" id="firstname"  placeholder="First Name" required />
-             </div>
-             <div className="input-group">
-                 <input type="text" name="lastname"  placeholder="Last Name" required/>
-             </div>
-             <div className="input-group">
-                 <input type="email" name="email" placeholder="Email Address" required />
-             </div>
-             <div className="input-group">
-                 <input type="password" name="password" placeholder="Password" required/>
-             </div>
-             <button type="submit">
-                 claim your free trial
-             </button>
-             <small>By clicking the button, you are agreeing to our <a href="/home">Terms and Services</a></small>
-            </form>
+            <SignUpForm/>
          </section>
      </main>
      );
