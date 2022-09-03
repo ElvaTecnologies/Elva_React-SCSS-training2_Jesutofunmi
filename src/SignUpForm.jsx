@@ -2,6 +2,8 @@ import React from 'react'
 import { useFormik } from 'formik'
 import {MdError}from 'react-icons/md'
 
+
+
 const validate = values => {
     const errors = {};
     if (!values.firstName) {
@@ -25,6 +27,25 @@ const validate = values => {
     return errors;
   };
 
+// const fields = [
+//   {
+//     fieldName: 'firstName',
+//     fieldHolder: 'First Name'
+//   },
+//   {
+//     fieldName: 'lastName',
+//     fieldHolder: 'Last Name'
+//   },
+//   {
+//     fieldName: 'email',
+//     fieldHolder: 'Email Address'
+//   },
+//   {
+//     fieldName: 'password',
+//     fieldHolder: 'Password'
+//   }
+// ]
+
 const SignUpForm = () => {
     const formik = useFormik({
         initialValues: {
@@ -36,11 +57,33 @@ const SignUpForm = () => {
         validate,
         onSubmit: values => {
             alert(JSON.stringify(values, null, 2));
-        },
+            
+       }
+  
         });
 
   return (
     <form onSubmit={formik.handleSubmit}>
+      {/* {
+        fields.map((field)=>{
+          const {fieldName, fieldHolder} = field;
+          return ( 
+            <div className="input-group">
+              <input 
+              className={formik.touched.fieldName && formik.errors.fieldName ? 'error' : null}
+              type="text" 
+              name={fieldName} 
+              id={fieldName} 
+              placeholder= {fieldHolder }
+              onChange={formik.handleChange}
+              value={formik.values.fieldName}
+              />
+              {formik.touched.fieldName && formik.errors.fieldName ? <MdError className='icon desktop'/> : null}
+              {formik.touched.fieldName && formik.errors.fieldName ? ( <div className='errorDiv'>{formik.errors.fieldName}</div>) : null}
+            </div>
+          )
+        })
+      } */}
     <div className="input-group">
         <input 
           className={formik.touched.firstName && formik.errors.firstName ? 'error' : null}
@@ -51,7 +94,7 @@ const SignUpForm = () => {
           onChange={formik.handleChange}
           value={formik.values.firstName}
           />
-          {formik.touched.firstName && formik.errors.firstName ? <MdError className='icon'/> : null}
+          {formik.touched.firstName && formik.errors.firstName ? <MdError className='icon desktop'/> : null}
           {formik.touched.firstName && formik.errors.firstName ? ( <div className='errorDiv'>{formik.errors.firstName}</div>) : null}
     </div>
     <div className="input-group">
